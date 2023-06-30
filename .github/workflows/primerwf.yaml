@@ -11,6 +11,7 @@ jobs:
     - run: npm install -g bats
     - run: bats -v
   misegundojob: # Nombre del job
+    needs: miprimerjob
     runs-on: ubuntu-latest # Linux
     steps:
     - run: echo 'Hola Mundo'
